@@ -30,7 +30,7 @@ cd campusflow
 Optionally, work inside a virtual environment:
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 # Windows
 .venv\Scripts\activate
 # macOS / Linux
@@ -42,13 +42,13 @@ source .venv/bin/activate
 From the project root:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 To keep a separate store — useful for demos, experiments or a second campus:
 
 ```bash
-python main.py path/to/other-tickets.json
+python3 main.py path/to/other-tickets.json
 ```
 
 ### Menu options
@@ -171,7 +171,7 @@ start**, so the unreadable file is never overwritten.
 From the project root:
 
 ```bash
-python -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -v
 ```
 
 `main.py` is deliberately not covered — the suite targets the package modules,
