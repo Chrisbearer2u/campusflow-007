@@ -1,0 +1,28 @@
+# --- CampusFlow data -------------------------------------------------------
+# Tickets live in a local JSON file that must never be committed: it is
+# per-machine working data, not source.
+data/tickets.json
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+build/
+dist/
+*.egg-info/
+
+# --- Virtual environments --------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Editors / IDEs --------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Local developer files -------------------------------------------------
+.env
+.DS_Store
+Thumbs.db
