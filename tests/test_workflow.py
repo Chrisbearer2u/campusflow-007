@@ -171,6 +171,11 @@ class WorkQueueTests(unittest.TestCase):
 
     def test_queue_excludes_resolved_tickets_only(self):
         store = make_store()
+        # T002 (low) is resolved and must drop out; open and in-progress tickets
+        # both stay.
+        assign_ticket(store, "T002", "Grace Hopper")
+        start_ticket(store, "T002")
+        resolve_ticket(store, "T002")
         assign_ticket(store, "T003", "Ada Lovelace")
         start_ticket(store, "T003")
 
